@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="回 · 手势八卦 — 科技回锅肉创作的单手生成式动态体验。"
+    />
+    <meta name="theme-color" content="#050706" />
+    <title>回 · 手势八卦</title>
+  </head>
+  <body>
+    <main id="app">
+      <video id="camera" autoplay muted playsinline aria-hidden="true"></video>
+      <canvas id="stage" aria-label="Generative Bagua interaction canvas"></canvas>
+
+      <section class="gate" id="gate" aria-labelledby="project-title">
+        <div class="gate__frame" aria-hidden="true"></div>
+        <p class="eyebrow">HUI · GESTURE BAGUA</p>
+        <h1 id="project-title"><span>回</span>手势八卦</h1>
+        <p class="byline">科技回锅肉 · 2026</p>
+
+        <div class="gesture-sequence" aria-label="Point, close fist, open palm">
+          <span>☝</span><i>→</i><span>✊</span><i>→</i><span>🖐</span>
+        </div>
+
+        <p class="intro">
+          用一只手，唤醒、展开并引导一座变化之阵。<br />
+          <span>Use one hand to awaken, unfold and guide a field of change.</span>
+        </p>
+
+        <div class="gate__actions">
+          <button class="primary" id="enable-camera" type="button">
+            启用摄像头 <small>ENABLE CAMERA</small>
+          </button>
+          <button class="secondary" id="manual-mode" type="button">
+            手动体验 <small>MANUAL MODE</small>
+          </button>
+        </div>
+
+        <p class="privacy-note">
+          摄像头画面仅在设备本地处理，不上传、不录制。<br />
+          <span>Camera frames stay on your device and are never uploaded or recorded.</span>
+        </p>
+      </section>
+
+      <section class="hud" id="hud" hidden>
+        <div class="status">
+          <span class="status__icon" id="status-icon">☝</span>
+          <div>
+            <strong id="status-zh">伸出食指 · 唤醒阵眼</strong>
+            <small id="status-en">POINT · AWAKEN THE CENTER</small>
+          </div>
+        </div>
+
+        <div class="controls">
+          <span class="camera-live" id="camera-live" hidden>● CAMERA LOCAL</span>
+          <button id="reset" type="button" title="Restart">↺</button>
+          <button id="mute" type="button" title="Mute">♪</button>
+          <button id="stop-camera" type="button" title="Stop camera" hidden>◉</button>
+        </div>
+      </section>
+
+      <aside class="manual-help" id="manual-help" hidden>
+        CLICK · ADVANCE　 MOVE · GUIDE　 WHEEL · SCALE　 V · VORTEX　 R · RESET
+      </aside>
+
+      <div class="error" id="error" role="status" hidden></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

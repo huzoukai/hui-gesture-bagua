@@ -1,0 +1,23 @@
+{
+  "name": "hui-gesture-bagua",
+  "version": "1.0.0",
+  "description": "A single-hand generative Bagua interaction by 科技回锅肉.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mediapipe/camera_utils": "0.3.1675466862",
+    "@mediapipe/hands": "0.4.1675469240",
+    "gsap": "3.12.5",
+    "three": "0.147.0"
+  },
+  "devDependencies": {
+    "vite": "7.3.6",
+    "vitest": "3.2.7"
+  }
+}

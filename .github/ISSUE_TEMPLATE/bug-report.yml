@@ -1,0 +1,37 @@
+name: Bug report / 错误报告
+description: Report a reproducible problem / 报告可复现问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device / 浏览器与设备
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Input mode / 操作模式
+      options:
+        - Camera / 摄像头
+        - Manual / 手动
+        - Both / 两者
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps / 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result / 预期与实际结果
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "Please do not attach camera footage containing personal information. / 请勿上传包含个人隐私的摄像头录像。"
