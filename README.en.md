@@ -6,7 +6,7 @@ A generative Bagua experience controlled through a single hand, mouse or keyboar
 
 **Created by 科技回锅肉**
 
-> The source is available for personal learning, research and non-commercial entertainment only. Commercial use requires prior written authorization.
+> This repository is the public visual edition of the HUI experience. It preserves the same fourteen-layer Bagua structure and gesture motion while excluding the commercial product's casting, AI, payment, email and server features. The source is available for personal learning, research and non-commercial entertainment only. Commercial use requires prior written authorization.
 
 ## Experience
 
@@ -22,6 +22,12 @@ This project turns the hand into an interface. No controller is required; the ex
 | ✊ Close fist again | Fold the three-dimensional field back into a plane |
 
 The project contains no divination, hexagram casting, question input, AI reading, payment or prediction features.
+
+## Fourteen-layer visual structure
+
+The public experience combines the Taiji center, Earlier Heaven trigrams, Nine Stars, Twenty-Four Heaven Stars, Earth Plate needle, Seventy-Two Dragons, Human Plate needle, Sixty Dragons, Heaven Plate needle, 120 divisions, sixty-four hexagrams, twenty-eight lunar mansions, twenty-four solar terms and the 360-degree outer scale.
+
+Every band shares one center and a fixed proportion. Layers no longer scale independently in the flat state; in three dimensions they move only along their designed depth positions. This prevents drifting text, loose rings and layer intersections. Mobile devices automatically use lower texture resolution, fewer particles and a lower pixel ratio to reduce heat and GPU memory pressure.
 
 ## Manual mode
 
